@@ -16,11 +16,16 @@ img, iframe {
 
 /* style.css dosyana ekle */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4); /* siyah ve şeffaf */
-  backdrop-filter: blur(10px); /* blur efekti */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
   transition: top 0.3s;
   z-index: 9999;
 }
+
 
 .navbar .nav-link {
   font-weight: 600; /* Daha kalın: 400 normal, 600 yarı kalın, 700 kalın */
@@ -38,17 +43,7 @@ img, iframe {
   transform: scale(1.2);
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  /* ...diğer stiller */
-}
 
-.navbar {
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-}
 
 
 
