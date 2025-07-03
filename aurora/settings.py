@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-q2m=fj&ce(buekngjd&ll4vn^=k6z*jv6)d(m(6re@wrfsz(*z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['aurora420.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['www.aurora420.org', 'aurora420.org']
 
 
 # Application definition
