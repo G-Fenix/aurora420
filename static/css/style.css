@@ -287,6 +287,8 @@ img, iframe {
   padding-top: 56.25%; /* 16:9 oran */
   overflow: hidden;
   border-radius: 10px;
+  margin: 0 auto; /* ortalamak için */
+  max-width: 100%;
 }
 
 .map-responsive iframe {
@@ -298,6 +300,7 @@ img, iframe {
   border: 0;
   display: block;
 }
+
 
 
 
