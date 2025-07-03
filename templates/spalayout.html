@@ -200,19 +200,30 @@
   AOS.init({ once: false, duration: 1200, offset: 100 });
 </script>
 <script>
-  let prevScrollPos = window.pageYOffset;
   const navbar = document.getElementById("navbar");
 
-  window.addEventListener("scroll", function () {
-    const currentScrollPos = window.pageYOffset;
-    if (prevScrollPos > currentScrollPos) {
-      navbar.style.top = "0";
-    } else {
-      navbar.style.top = "-100px";
-    }
-    prevScrollPos = currentScrollPos;
-  });
+  function isDesktop() {
+    return window.innerWidth > 991;
+  }
+
+  if (isDesktop()) {
+    let prevScrollPos = window.pageYOffset;
+
+    window.addEventListener("scroll", function () {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        navbar.style.top = "0";
+      } else {
+        navbar.style.top = "-100px";
+      }
+      prevScrollPos = currentScrollPos;
+    });
+  } else {
+    // 👇 Mobilde her durumda navbar görünür olsun
+    navbar.style.top = "0";
+  }
 </script>
+
 
 </body>
 </html>
