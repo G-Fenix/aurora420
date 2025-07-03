@@ -38,6 +38,17 @@ img, iframe {
   transform: scale(1.2);
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  /* ...diğer stiller */
+}
+
+.navbar {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
 
 
 

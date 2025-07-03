@@ -216,6 +216,22 @@
     prevScrollPos = currentScrollPos;
   });
 </script>
+let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
+  const currentScrollPos = window.pageYOffset;
+
+  if (currentScrollPos === 0) {
+    navbar.style.top = "0"; // Sayfanın en üstündeysek menü görünür
+  } else if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0"; // Yukarı scroll
+  } else {
+    navbar.style.top = "-100px"; // Aşağı scroll
+  }
+
+  prevScrollPos = currentScrollPos;
+});
 
 
 
