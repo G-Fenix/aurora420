@@ -1,0 +1,83 @@
+{% extends "spalayout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Martes de Highflix{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/movie.png" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>MARTES DE HIGHFLIX</h1>
+    <p>¡No te pierdas este evento lleno de música, diversión y sorpresas!</p>
+    <a href="#details" class="hero-button">Ver Más</a>
+  </div>
+</section>
+
+<section id="details" class="highflix-info-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🎬 Martes de Highflix</h2>
+    <p class="text-center mb-5" data-aos="fade-up">¡Nuestra noche de cine semanal! Relájate, enciende uno y disfruta del show 🎥</p>
+
+    <div class="row g-4">
+
+      <!-- Cómo Funciona -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🍿 Cómo Funciona</h4>
+            <p class="card-text">
+              Únete a nosotros en la zona lounge para una noche de película especial. Cada martes proyectamos películas seleccionadas con cariño — el ambiente es relajado, la pantalla es grande y la comunidad te espera con los brazos abiertos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Las Reglas -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">📜 Las Reglas</h4>
+            <ul class="card-text list-unstyled">
+              <li>🎟 Abierto a todos los miembros de Aurora420</li>
+              <li>🔇 Respeta el ambiente — nada de hablar fuerte</li>
+              <li>🛋 Ponte cómodo y trae tus mejores vibras</li>
+              <li>🌿 Se permite fumar — con respeto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hora de la Película -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🕗 Hora de la Película</h4>
+            <p class="card-text">
+              La función comienza **cada martes a las 20:00 en punto**. Te recomendamos llegar temprano para elegir tu lugar y relajarte — tenemos palomitas y buena onda esperándote 🍿
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contáctanos</h2>
+    <p class="mb-4">¿Tienes preguntas o quieres hacerte miembro? ¡Hablemos!</p>
+    <a href="mailto:info@aurora420.org?subject=Consulta%20de%20Membresía&body=Hola,%20acabo%20de%20visitar%20su%20sitio%20web." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="Logo de Aurora420" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

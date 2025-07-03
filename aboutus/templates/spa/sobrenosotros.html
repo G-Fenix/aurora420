@@ -1,0 +1,120 @@
+{% extends "spalayout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Sobre Nosotros{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/wtwo.jpg" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>¿Por qué Aurora420?</h1>
+    <p>Más que un club. Es un movimiento de conexión, creatividad y comunidad.</p>
+    <a href="#next" class="hero-button">Ver Más</a>
+  </div>
+</section>
+
+<section id="next" class="about-section">
+  <h2>Áreas de Innovación</h2>
+  <p>Aquí encontrarás los proyectos que desarrollamos y las tendencias tecnológicas que seguimos.</p>
+</section>
+
+<section id="next" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="{% static 'images/ourstory.png' %}" class="img-fluid rounded" alt="Nuestra Historia">
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <h2>Nuestra Historia</h2>
+        <p>Aurora420 nació de una idea sencilla: crear un espacio seguro y creativo para amantes del cannabis en Tenerife. Un lugar donde la cultura, la comunidad y el bienestar se encuentran.</p>
+        <p>Hoy somos más que un club: somos un colectivo de soñadores, programadores, artistas y personas de mente abierta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-white milestones-section" style="background-image: url('{% static "images/wtree.jpg" %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="container" style="background-color: rgba(0, 0, 0, 0.7); padding: 2rem; border-radius: 10px;">
+    <h2 class="text-center mb-5">Hitos de Aurora420</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <h5>2023</h5>
+        <p>La idea nace 🌱 en una conversación en la playa en Tenerife.</p>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-left">
+        <h5>2024</h5>
+        <p>La identidad de marca, misión y eventos toman forma 💫</p>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <h5>2025</h5>
+        <p>Aurora420 abre sus puertas 🚪 y da la bienvenida a sus primeros miembros.</p>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-left">
+        <h5>Futuro</h5>
+        <p>Expandiendo nuestra comunidad y creando el mundo que soñamos 💜</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2" data-aos="fade-left">
+        <video autoplay muted loop playsinline class="img-fluid rounded w-100">
+          <source src="{% static 'videos/menu.mp4' %}" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+      <div class="col-md-6 order-md-1" data-aos="fade-right">
+        <h2>El Estilo Aurora</h2>
+        <p>Ritmos relajados, luces suaves, conversaciones reales y siempre buena vibra. Ya sea que estés programando, pintando, relajándote o simplemente respirando, este es tu espacio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-white" style="background-color: #111;">
+  <div class="container text-center">
+    <h2 class="mb-5">Nuestros Valores</h2>
+    <div class="row g-4">
+      <div class="col-md-3" data-aos="zoom-in">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-handshake fa-2x mb-3 text-success"></i>
+          <h5>Comunidad</h5>
+          <p>No somos nada sin los demás. La conexión real es la raíz de todo.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-leaf fa-2x mb-3 text-green"></i>
+          <h5>Respeto</h5>
+          <p>Por la planta 🌿, por las personas y por el espacio. Actuamos con intención y amor.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-lightbulb fa-2x mb-3 text-warning"></i>
+          <h5>Creatividad</h5>
+          <p>Del código al lienzo, celebramos cada chispa de inspiración.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-brain fa-2x mb-3 text-info"></i>
+          <h5>Conciencia</h5>
+          <p>Estar “high” no es solo un estado — es estar presente. Rompemos con los estereotipos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="Aurora420 Logo" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

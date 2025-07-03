@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Weed Wisdom Wednesday{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/weed.png" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Weed Wisdom Wednesday</h1>
+    <p>Kendini doğanın huzuruna bırak. Sessizlik, yeşillik ve sen.</p>
+    <a href="#retreat" class="hero-button">See More</a>
+  </div>
+</section>
+
+<section id="retreat" class="wisdom-section py-5 bg-light" id="retreat">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🌿 Weed Wisdom Wednesday</h2>
+    <p class="text-center mb-5" data-aos="fade-up">
+      A space for stories, laughs, and honest connections. Gather 'round — it's time to share your stoner wisdom ✨
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Experience Sharing -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🗣 Experience Sharing</h4>
+            <p class="card-text">
+              Join the group circle and tell your most unforgettable, hilarious or insightful weed experience. No pressure — just real talk, good laughs, and a lot of nodding.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anonymous Voting -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🗳 Anonymous Voting</h4>
+            <p class="card-text">
+              After everyone shares, we all vote for our favorite story — anonymously. No names, just the vibe. The most liked story wins the joint of the night!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evening Time -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🕗 When & Where</h4>
+            <p class="card-text">
+              Every **Wednesday at 8 PM**, gather in our chill zone. Bring your favorite memories, chill attitude, and open mind. The joint goes to the wisest tale 💨
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="mb-4">Have a question or want to become a member? Let’s talk!</p>
+    <a href="mailto:info@aurora420.org?subject=Membership%20Inquiry&body=Hello,%20I%20just%20visited%20your%20website." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="420Society Logo" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,82 @@
+{% extends "spalayout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Miércoles de Sabiduría Verde{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/weed.png" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Miércoles de Sabiduría Verde</h1>
+    <p>Déjate llevar por la paz de la naturaleza. Silencio, verde y tú.</p>
+    <a href="#retreat" class="hero-button">Ver Más</a>
+  </div>
+</section>
+
+<section id="retreat" class="wisdom-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🌿 Miércoles de Sabiduría Verde</h2>
+    <p class="text-center mb-5" data-aos="fade-up">
+      Un espacio para historias, risas y conexiones honestas. ¡Siéntate con nosotros y comparte tu sabiduría cannábica ✨!
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Compartir Experiencias -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🗣 Compartir Experiencias</h4>
+            <p class="card-text">
+              Únete al círculo y cuéntanos tu experiencia más inolvidable, divertida o reflexiva relacionada con el cannabis. Sin presiones — solo charlas reales, muchas risas y cabeceos cómplices.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Votación Anónima -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🗳 Votación Anónima</h4>
+            <p class="card-text">
+              Después de escuchar todas las historias, votamos por la favorita — de forma anónima. Sin nombres, solo vibras. ¡La historia más querida se lleva el porro de la noche!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hora y Lugar -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🕗 Cuándo y Dónde</h4>
+            <p class="card-text">
+              Todos los **miércoles a las 20:00**, nos reunimos en la zona chill. Trae tus mejores recuerdos, buena vibra y mente abierta. El porro es para la historia más sabia 💨
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contáctanos</h2>
+    <p class="mb-4">¿Tienes preguntas o quieres hacerte miembro? ¡Hablemos!</p>
+    <a href="mailto:info@aurora420.org?subject=Consulta%20de%20Membresía&body=Hola,%20acabo%20de%20visitar%20su%20sitio%20web." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="Logo de Aurora420" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

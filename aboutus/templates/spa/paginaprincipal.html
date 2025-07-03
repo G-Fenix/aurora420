@@ -1,0 +1,220 @@
+{% extends "spalayout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Inicio{% endblock %}
+
+{% block content %}
+
+<header class="hero-video-section position-relative">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="{% static 'videos/tenerife.mp4' %}" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+  </video>
+
+  <div class="overlay-text text-center" data-aos="fade-up">
+    <img src="{% static 'images/logo.png' %}" alt="Aurora420 Logo" class="hero-logo mb-3">
+    <h1 class="display-4 fw-bold text-white">Tu Asociación en Tenerife</h1>
+    <a href="#about" class="hero-button">Ver Más</a>
+  </div>
+</header>
+
+<section id="about" class="why-join-us-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">¿Por qué unirte a Aurora420?</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4" data-aos="zoom-in">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/comcom.png' %}" class="card-img-top" alt="Comunidad">
+          <div class="card-body">
+            <h5 class="card-title">Comunidad Segura</h5>
+            <p class="card-text">Conecta con personas de mente abierta que comparten tus valores en un entorno tranquilo y seguro.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/weedbubu.png' %}" class="card-img-top" alt="Productos">
+          <div class="card-body">
+            <h5 class="card-title">Productos de Alta Calidad</h5>
+            <p class="card-text">Disfruta de nuestra selección cuidada de productos de cannabis cultivados con pasión y dedicación.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/kanaryatenerif.png' %}" class="card-img-top" alt="Experiencia">
+          <div class="card-body">
+            <h5 class="card-title">Experiencia Única en Tenerife</h5>
+            <p class="card-text">Siente el ambiente isleño mientras te relajas en nuestra zona lounge cómoda y estilizada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mission-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="{% static 'images/ourstory.png' %}" class="img-fluid rounded" alt="Nuestra Misión">
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <h2>Nuestra Misión</h2>
+        <p>En Aurora420, buscamos crear un espacio seguro, legal y respetuoso para los amantes del cannabis. Nuestra misión es educar, empoderar y unir a la comunidad en torno a la cultura cannábica en Tenerife.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="events-section py-5 bg-light text-center" data-aos="fade-up">
+  <div class="container">
+    <h2 class="mb-4">Eventos y Comunidad</h2>
+    <p class="mb-5">Desde tardes relajadas hasta talleres culturales — organizamos momentos únicos que recordarás.</p>
+
+    <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="{% static 'images/draw.png' %}" class="d-block w-100 rounded" alt="Evento Artístico">
+          <div class="carousel-caption d-block">
+            <h5>Lunes de Pintura y Caladas</h5>
+            <a href="/eventos/lunes-de-pintura-y-caladas" class="btn btn-custom-green  mt-2">Ver Más</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'images/movie.png' %}" class="d-block w-100 rounded" alt="Noche de Película">
+          <div class="carousel-caption d-block">
+            <h5>Martes de Highflix</h5>
+            <a href="/eventos/martes-de-highflix" class="btn btn-custom-green  mt-2">Ver Más</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'images/weed.png' %}" class="d-block w-100 rounded" alt="Sabiduría Cannábica">
+          <div class="carousel-caption d-block">
+            <h5>Miércoles de Sabiduría Cannábica</h5>
+            <a href="/eventos/miercoles-de-sabiduria" class="btn btn-custom-green mt-2">Ver Más</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'images/talking.png' %}" class="d-block w-100 rounded" alt="Conversaciones">
+          <div class="carousel-caption d-block">
+            <h5>Jueves de Conversa</h5>
+            <a href="/eventos/jueves-de-conversa" class="btn btn-custom-green mt-2">Ver Más</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'images/boardgame.png' %}" class="d-block w-100 rounded" alt="Noche de Juegos">
+          <div class="carousel-caption d-block">
+            <h5>Viernes de Juegos</h5>
+            <a href="/eventos/viernes-de-juegos" class="btn btn-custom-green mt-2">Ver Más</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'images/sarki.png' %}" class="d-block w-100 rounded" alt="Micrófono Abierto">
+          <div class="carousel-caption d-block">
+            <h5>Sábado de Micrófono Abierto</h5>
+            <a href="/eventos/sabado-de-microfono" class="btn btn-custom-green mt-2">Ver Más</a>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="rewards-section py-5 bg-light" id="rewards">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🔥 Beneficios Exclusivos de Aurora420</h2>
+    <p class="text-center mb-5" data-aos="fade-up">¡Celebra la fidelidad y las buenas vibras! Nos encanta recompensar a nuestra comunidad 🌿</p>
+
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">💚 Tarjeta de Fidelidad</h4>
+            <p class="card-text">
+              Recoge tu tarjeta personal en recepción. Cada vez que nos visites, recibirás un sello. Tras 10 visitas, te regalamos un porro — nuestra manera de agradecerte por ser parte de la tribu.
+            </p>
+            <ul class="list-unstyled">
+              <li>✅ 1 visita = 1 sello</li>
+              <li>🎁 10 sellos = 1 porro gratis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🏆 Chili de la Semana</h4>
+            <p class="card-text">
+              Cada semana, nuestro equipo elige a un miembro destacado por su vibra, amabilidad o energía positiva. El ganador es nombrado <strong>Chili de la Semana</strong> y recibe un porro gratis como muestra de agradecimiento.
+            </p>
+            <ul class="list-unstyled">
+              <li>🌟 Elegido por el equipo</li>
+              <li>💨 Recompensa: 1 porro gratis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="join-section py-5" data-aos="fade-left">
+  <div class="container text-center">
+    <h2 class="mb-4">Cómo Unirte</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <ol class="text-start">
+          <li>Tener 18+ años y traer un documento de identidad válido.</li>
+          <li>Visítanos en Tenerife y completa el formulario de inscripción.</li>
+          <li>¡Empieza a disfrutar la experiencia Aurora420!</li>
+        </ol>
+        <a href="/contactanos" class="btn btn-success mt-3">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location-section py-5 bg-dark text-white">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="mb-3">Nuestra Ubicación</h2>
+    <p>Estamos en el corazón de Tenerife. ¡Ven a visitarnos!</p>
+    <div class="map-responsive mt-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9369.393506782144!2d-16.580356457949932!3d28.402442226798154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a7fd061683509%3A0x74c8f925f2dd9bce!2sParque%20Canino%20Los%20Realejos!5e0!3m2!1str!2ses!4v1751474555548!5m2!1str!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contáctanos</h2>
+    <p class="mb-4">¿Tienes preguntas o quieres hacerte miembro? ¡Hablemos!</p>
+    <a href="mailto:info@aurora420.org?subject=Consulta%20de%20Membresía&body=Hola,%20acabo%20de%20visitar%20su%20sitio%20web." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="Aurora420 Logo" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

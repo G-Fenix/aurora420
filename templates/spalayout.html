@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Aurora420{% endblock %}</title>
+  <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
+
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/all.min.css' %}" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<div class="page-wrapper d-flex flex-column min-vh-100">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Sol: Logo -->
+            <a href="/" class="navbar-brand me-4">
+                <img src="{% static 'images/logo.png' %}" alt="SofiaTribe Logo" class="img-fluid d-block" style="max-height: 90px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Orta: Menü -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav gap-3">
+
+                    <li class="nav-item">
+                      <a href="/" class="nav-link">
+                        <i class="fas fa-home me-2"></i> Inicio
+                      </a>
+                    </li>
+
+                    <!-- Eventos -->
+                    <li class="nav-item dropdown position-relative">
+                      <button class="nav-link dropdown-toggle btn btn-link border-0" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-calendar-alt me-2"></i> Eventos</button>
+                    <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                      <a href="/eventos/lunes-de-pintura-y-caladas" class="dropdown-item d-flex flex-column">
+                        <span class="fw-bold"><i class="fas fa-paint-brush me-2 text-primary"></i> Lunes de Pintura y Caladas</span>
+                        <small class="ms-4">Sesiones creativas con hierba y colores</small>
+                      </a>
+
+                      <a href="/eventos/martes-de-highflix" class="dropdown-item d-flex flex-column">
+                        <span class="fw-bold"><i class="fas fa-film me-2 text-danger"></i> Martes de Highflix</span>
+                        <small class="ms-4">Noches de películas con colegas fumetas</small>
+                      </a>
+
+                      <a href="/eventos/miercoles-de-sabiduria" class="dropdown-item d-flex flex-column">
+                        <span class="fw-bold"><i class="fas fa-brain me-2 text-success"></i> Miércoles de Sabiduría Cannábica</span>
+                        <small class="ms-4">Charlas profundas y buenas vibras</small>
+                      </a>
+
+                      <a href="/eventos/jueves-de-conversa" class="dropdown-item d-flex flex-column">
+                        <span class="fw-bold"><i class="fas fa-microphone-alt me-2 text-warning"></i> Jueves de Conversa</span>
+                        <small class="ms-4">Debates abiertos sobre temas reales</small>
+                      </a>
+
+                      <a href="/eventos/viernes-de-juegos" class="dropdown-item d-flex flex-column">
+                        <span class="fw-bold"><i class="fas fa-gamepad me-2 text-info"></i> Viernes de Juegos</span>
+                        <small class="ms-4">Noche de videojuegos y adrenalina</small>
+                      </a>
+
+                      <a href="/eventos/sabado-de-microfono" class="dropdown-item d-flex flex-column">
+                        <span class="fw-bold"><i class="fas fa-microphone me-2 text-secondary"></i> Sábado de Micrófono Abierto</span>
+                        <small class="ms-4">Muestra tu talento en el escenario</small>
+                      </a>
+                    </div>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="/blog" class="nav-link">
+                        <i class="fas fa-blog me-2"></i> Blog
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="/sobre-nosotros" class="nav-link">
+                        <i class="fas fa-info-circle me-2"></i> Sobre Nosotros
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="/contactanos" class="nav-link">
+                        <i class="fas fa-envelope me-2"></i> Contáctanos
+                      </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Sağ: Dil seçimi -->
+            <div class="d-flex ms-3">
+                <a href="/en" class="btn btn-light btn-sm me-2">EN</a>
+                <a href="/" class="btn btn-light btn-sm">ES</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1">
+        {% block content %}{% endblock content %}
+    </main>
+
+</div>    
+
+<footer class="footer-section bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo & Slogan -->
+      <div class="col-md-3 mb-4">
+        <img src="{% static 'images/logo.png' %}" alt="Aurora420 Logo" style="max-height: 70px;">
+        <p class="mt-3 fst-italic">"Elevando momentos, construyendo comunidad en Tenerife 🌿"</p>
+      </div>
+
+      <!-- Enlaces rápidos -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Enlaces Rápidos</h5>
+        <ul class="list-unstyled">
+          <li><a href="/" class="text-white text-decoration-none">Inicio</a></li>
+          <li><a href="/blog" class="text-white text-decoration-none">Blog</a></li>
+          <li><a href="/sobre-nosotros" class="text-white text-decoration-none">Sobre Nosotros</a></li>
+          <li><a href="/contactanos" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Eventos -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Eventos Semanales</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/eventos/lunes-de-pintura-y-caladas" class="text-white text-decoration-none">
+              <i class="fas fa-paint-brush me-2 text-primary"></i> Lunes de Pintura y Caladas
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="/eventos/martes-de-highflix" class="text-white text-decoration-none">
+              <i class="fas fa-film me-2 text-danger"></i> Martes de Highflix
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="/eventos/miercoles-de-sabiduria" class="text-white text-decoration-none">
+              <i class="fas fa-brain me-2 text-success"></i> Miércoles de Sabiduría Cannábica
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="/eventos/jueves-de-conversa" class="text-white text-decoration-none">
+              <i class="fas fa-microphone-alt me-2 text-warning"></i> Jueves de Conversa
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="/eventos/viernes-de-juegos" class="text-white text-decoration-none">
+              <i class="fas fa-gamepad me-2 text-info"></i> Viernes de Juegos
+            </a>
+          </li>
+          <li>
+            <a href="/eventos/sabado-de-microfono" class="text-white text-decoration-none">
+              <i class="fas fa-microphone me-2 text-secondary"></i> Sábado de Micrófono Abierto
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contacto y redes -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Contacto</h5>
+        <p class="mb-1"><i class="fas fa-envelope me-2"></i>info@aurora420.org</p>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i>+34 600 000 000</p>
+        <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>Tenerife, España</p>
+        <div class="mt-3">
+          <a href="https://instagram.com" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" class="text-white me-3 fs-5"><i class="fab fa-facebook"></i></a>
+          <a href="https://tiktok.com" class="text-white me-3 fs-5"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/0034600000000" class="text-white fs-5"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-top border-secondary mt-4" />
+
+    <div class="text-center small mt-3">
+      <p class="mb-0">&copy; 2025 Aurora420. Todos los derechos reservados. Hecho con ❤️ desde Tenerife.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: false, duration: 1200, offset: 100 });
+</script>
+<script>
+  let prevScrollPos = window.pageYOffset;
+  const navbar = document.getElementById("navbar");
+
+  window.addEventListener("scroll", function () {
+    const currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = "-100px";
+    }
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+</body>
+</html>

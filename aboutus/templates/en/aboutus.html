@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | About Us{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/wtwo.jpg" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Why is the Aurora420</h1>
+    <p>More than a club. It’s a movement of connection, creativity, and community.</p>
+    <a href="#next" class="hero-button">See More</a>
+  </div>
+</section>
+
+<section id="next" class="about-section">
+  <h2>İnovasyon Alanları</h2>
+  <p>Geliştirdiğimiz projeler ve teknoloji trendleri burada.</p>
+</section>
+
+<section id="next" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="{% static 'images/ourstory.png' %}" class="img-fluid rounded" alt="Our Story">
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <h2>Our Story</h2>
+        <p>Aurora420 was born from a simple idea: create a safe and creative space for cannabis lovers in Tenerife. A space where culture, community, and wellness meet.</p>
+        <p>Today, we’re more than just a club — we’re a collective of dreamers, coders, artists, and open-minded humans.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 text-white milestones-section" style="background-image: url('{% static "images/wtree.jpg" %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="container" style="background-color: rgba(0, 0, 0, 0.7); padding: 2rem; border-radius: 10px;">
+    <h2 class="text-center mb-5">Aurora420 Milestones</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <h5>2023</h5>
+        <p>Idea is born 🌱 in a beach conversation in Tenerife.</p>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-left">
+        <h5>2024</h5>
+        <p>Brand identity, mission & events take shape 💫</p>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <h5>2025</h5>
+        <p>Aurora420 opens doors 🚪 and welcomes its first members.</p>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-left">
+        <h5>Future</h5>
+        <p>Expanding our community and creating the world we want 💜</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2" data-aos="fade-left">
+        <video autoplay muted loop playsinline class="img-fluid rounded w-100">
+          <source src="{% static 'videos/menu.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-6 order-md-1" data-aos="fade-right">
+        <h2>The Aurora Vibe</h2>
+        <p>Think chill beats, soft lights, real convos and always good energy. Whether you're coding, painting, vibing or just breathing — this is your space.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-white" style="background-color: #111;">
+  <div class="container text-center">
+    <h2 class="mb-5">Our Core Values</h2>
+    <div class="row g-4">
+      <div class="col-md-3" data-aos="zoom-in">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-handshake fa-2x mb-3 text-success"></i>
+          <h5>Community</h5>
+          <p>We’re nothing without each other. Real connection is the root of everything.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-leaf fa-2x mb-3 text-green"></i>
+          <h5>Respect</h5>
+          <p>For the plant 🌿, for the people, for the space. We move with intention and love.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-lightbulb fa-2x mb-3 text-warning"></i>
+          <h5>Creativity</h5>
+          <p>From code to canvas, we celebrate every spark of inspiration.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="p-4 border rounded bg-dark h-100">
+          <i class="fas fa-brain fa-2x mb-3 text-info"></i>
+          <h5>Consciousness</h5>
+          <p>High isn’t just a state — it’s awareness. We go beyond the stereotype.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="420Society Logo" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

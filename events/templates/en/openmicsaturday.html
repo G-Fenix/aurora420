@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | OpenMic Saturday{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/sarki.png" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>OpenMic SATURDAY</h1>
+    <p>Fikirlerini yazıya dök, dünyayla paylaş.</p>
+    <a href="#writing" class="hero-button">See More</a>
+  </div>
+</section>
+
+
+<section id="writing" class="karaoke-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🎤 OpenMic Saturday</h2>
+    <p class="text-center mb-5" data-aos="fade-up">
+      Show us your inner superstar every Saturday at 8 PM! Whether you're a shower singer or stage-ready icon, our mic is open for all 🎶✨
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Karaoke Fun -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🎵 Karaoke All Night</h4>
+            <p class="card-text">
+              Sing your favorite songs solo or duet with friends. We’ve got the lyrics, the mic, and the perfect vibes ready!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vote & Win -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🏆 Audience Vote</h4>
+            <p class="card-text">
+              The crowd decides! The performer with the loudest cheers and claps wins a **free joint** — our Saturday tradition 💚
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Time -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🕗 Starts at 8 PM</h4>
+            <p class="card-text">
+              Warm up those vocal cords and get ready for a night of laughter, tunes, and unforgettable performances!
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="mb-4">Have a question or want to become a member? Let’s talk!</p>
+    <a href="mailto:info@aurora420.org?subject=Membership%20Inquiry&body=Hello,%20I%20just%20visited%20your%20website." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="420Society Logo" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

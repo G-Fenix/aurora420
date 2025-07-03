@@ -1,0 +1,83 @@
+{% extends "spalayout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Jueves de Palabra{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/talking.png" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>JUEVES DE PALABRA</h1>
+    <p>Da forma al mundo con inteligencia artificial y código.</p>
+    <a href="#innovation" class="hero-button">Ver Más</a>
+  </div>
+</section>
+
+<section id="innovation" class="talk-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🎙️ Jueves de Palabra</h2>
+    <p class="text-center mb-5" data-aos="fade-up">
+      ¡Sube al escenario, toma el micrófono y haznos reír! Cada jueves es tu momento de brillar con 10 minutos de comedia, relatos o charlas sinceras 💬🌿
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Reglas de participación -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">⏱️ 10 Minutos por Persona</h4>
+            <p class="card-text">
+              Cada persona tiene 10 minutos en el escenario — comedia, historia de vida, poesía hablada o anécdotas cannábicas. Sé tú mismo y brilla con luz propia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ganador y premios -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🏆 El Público Decide</h4>
+            <p class="card-text">
+              El público vota por la mejor actuación de la noche. El ganador se corona como nuestro <strong>Estrella del Escenario</strong> de la semana y recibe ¡un porro gratis!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hora y ambiente -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🕗 Todos los Jueves – 20:00</h4>
+            <p class="card-text">
+              Trae tu humor, tus historias o solo tu vibra. Nosotros nos encargamos del buen ambiente y un público cálido 🔥
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contáctanos</h2>
+    <p class="mb-4">¿Tienes preguntas o quieres hacerte miembro? ¡Hablemos!</p>
+    <a href="mailto:info@aurora420.org?subject=Consulta%20de%20Membresía&body=Hola,%20acabo%20de%20visitar%20su%20sitio%20web." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="Logo de Aurora420" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

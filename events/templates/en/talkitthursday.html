@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Talk it Thursday{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/talking.png" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Talk it THURSDAY</h1>
+    <p>Yapay zeka ve kodlama ile dünyayı şekillendir.</p>
+    <a href="#innovation" class="hero-button">See More</a>
+  </div>
+</section>
+
+<section id="innovation" class="talk-section py-5 bg-light" id="innovation">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🎙️ Talk it Thursday</h2>
+    <p class="text-center mb-5" data-aos="fade-up">
+      Step up, grab the mic, and make us laugh! Every Thursday is your chance to shine with 10 minutes of stand-up, storytelling, or honest talks 💬🌿
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Stand-Up Rules -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">⏱️ 10 Minutes Per Person</h4>
+            <p class="card-text">
+              Everyone gets 10 minutes on stage — stand-up comedy, life story, spoken word, or wild weed tales. Just be yourself and own the spotlight.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Winner & Rewards -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🏆 Audience Favorite Wins</h4>
+            <p class="card-text">
+              The audience votes for the best performance of the night. The winner gets crowned as our weekly <strong>Stage Star</strong> and receives 1 free joint!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Time & Vibes -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🕗 Every Thursday – 8 PM</h4>
+            <p class="card-text">
+              Bring your humor, your stories, or just your vibes. We’ll take care of the good atmosphere and a warm crowd 🔥
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="mb-4">Have a question or want to become a member? Let’s talk!</p>
+    <a href="mailto:info@aurora420.org?subject=Membership%20Inquiry&body=Hello,%20I%20just%20visited%20your%20website." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="420Society Logo" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}

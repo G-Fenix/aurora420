@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Aurora420 | Highflix Tuesday{% endblock %}
+
+{% block content %}
+
+<section class="hero-section" style="background-image: url('{% static "images/movie.png" %}');">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Highflix TUESDAY</h1>
+    <p>Müzik, eğlence ve sürprizlerle dolu bu etkinliği kaçırma!</p>
+    <a href="#details" class="hero-button">See More</a>
+  </div>
+</section>
+
+<section id="details" class="highflix-info-section py-5 bg-light" id="details">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">🎬 Highflix Tuesday</h2>
+    <p class="text-center mb-5" data-aos="fade-up">Your weekly movie night tradition! Sit back, light up, and enjoy the show 🎥</p>
+
+    <div class="row g-4">
+
+      <!-- How It Works -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🍿 How It Works</h4>
+            <p class="card-text">
+              Join us in the lounge zone for a special movie night. We project hand-picked films every Tuesday — the vibe is chill, the screen is big, and the community is always welcoming.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Rules -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">📜 The Rules</h4>
+            <ul class="card-text list-unstyled">
+              <li>🎟 Open to all Aurora420 members</li>
+              <li>🔇 Respect the chill — no loud chatting</li>
+              <li>🛋 Get comfy, bring your best vibes</li>
+              <li>🌿 Puffs allowed — just be cool about it</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showtime -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h4 class="card-title">🕗 Showtime</h4>
+            <p class="card-text">
+              The movie starts every **Tuesday at 20:00 (8 PM)** sharp. We recommend arriving early to pick your seat and get comfy — we’ve got popcorn and good vibes waiting 🍿
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-5 text-center" data-aos="fade-down">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="mb-4">Have a question or want to become a member? Let’s talk!</p>
+    <a href="mailto:info@aurora420.org?subject=Membership%20Inquiry&body=Hello,%20I%20just%20visited%20your%20website." class="btn btn-outline-dark">
+      info@aurora420.org
+    </a>
+  </div>
+</section>
+
+
+<section class="logo-fadein-section py-5 text-center">
+  <div class="container">
+    <img src="{% static 'images/logo.png' %}" alt="420Society Logo" class="logo-fade-in" />
+  </div>
+</section>
+
+{% endblock content %}
